@@ -1,0 +1,49 @@
+{
+  "student_metadata": {
+    "name": "Anuj Kumar Singh",
+    "roll_number": "230073",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 4.2",
+      "purpose": "Creating LLM usage disclosure JSON files in the correct format",
+      "prompt": "Generate the 10 LLM usage disclosure JSON files for Part B in the required format with task_tag, code_used_verbatim, and student_modification fields",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM generated the JSON structure and I populated the content based on my actual LLM usage throughout the tasks.",
+      "code_used_verbatim": true,
+      "student_modification": "I reviewed and corrected the content of each JSON file to accurately reflect my actual LLM usage. Some interactions were added or removed based on what actually happened.",
+      "student_verification": "I verified each JSON file contains all required fields and the declarations are accurate.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Generate the 10 LLM usage disclosure JSON files for Part B in the required format with task_tag, code_used_verbatim, and student_modification fields",
+      "why_important": "This ensured all 10 disclosure files follow the exact format required by the assignment with the additional Part B fields (task_tag, code_used_verbatim, student_modification)."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 4.2. All interactions listed above accurately reflect my actual use of Gemini (Google DeepMind) during the completion of this task. I have independently verified all LLM-generated content and take full responsibility for the submitted work.",
+    "understanding_acknowledged": true,
+    "signature": "Anuj Kumar Singh",
+    "date": "2026-03-12"
+  }
+}

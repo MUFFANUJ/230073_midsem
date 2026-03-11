@@ -1,0 +1,48 @@
+{
+  "student_metadata": {
+    "name": "Anuj Kumar Singh",
+    "roll_number": "230073",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 1.2",
+      "purpose": "Identifying key assumptions specific to the u-shapelet algorithm",
+      "prompt": "Identify the key assumptions that the unsupervised-shapelets method depends on, specifically those embedded in the algorithm design rather than general ML assumptions",
+      "llm_response_used": "Partially",
+      "how_it_helped": "The LLM suggested assumptions about local discriminative patterns, gap metric bimodality, shapelet length range, and greedy peeling correctness. I selected four that are most directly traceable to specific paper sections and wrote the violation scenarios from my own reasoning.",
+      "code_used_verbatim": false,
+      "student_verification": "I traced each assumption to specific sections of the paper: sdist definition (Def. 2), gap metric (Def. 4), Algorithm 1 parameters, and the iterative loop in Algorithm 1.",
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Identify the key assumptions that the unsupervised-shapelets method depends on, specifically those embedded in the algorithm design rather than general ML assumptions",
+      "why_important": "This prompt helped me distinguish between paper-specific assumptions (local patterns, gap metric bimodality) and generic ML assumptions (i.i.d. data). The violation scenarios for each assumption were my own reasoning based on the paper."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 1.2. All interactions listed above accurately reflect my actual use of Gemini (Google DeepMind) during the completion of this task. I have independently verified all LLM-generated content and take full responsibility for the submitted work.",
+    "understanding_acknowledged": true,
+    "signature": "Anuj Kumar Singh",
+    "date": "2026-03-12"
+  }
+}

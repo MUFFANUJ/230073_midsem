@@ -1,0 +1,49 @@
+{
+  "student_metadata": {
+    "name": "Anuj Kumar Singh",
+    "roll_number": "230073",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 3.1",
+      "purpose": "Implementing the two ablation experiments (gap metric removal and iterative separation removal)",
+      "prompt": "Implement two ablation experiments for the u-shapelet method: (1) replace gap metric with random selection, (2) replace iterative separation with single-pass top-K selection",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM implemented both ablated versions: discover_ushapelets_random (random selection) and discover_ushapelets_singlepass (single-pass top-K). I chose these specific components to ablate based on my understanding of the paper's key contributions.",
+      "code_used_verbatim": true,
+      "student_modification": "I chose which two components to ablate (gap metric and iterative separation) based on my paper understanding. The interpretations (5-7 sentences each) were written entirely by me based on the experimental results.",
+      "student_verification": "I verified both ablated methods run correctly and produce valid cluster assignments. I confirmed the Rand Index differences are consistent across multiple random seeds.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Implement two ablation experiments for the u-shapelet method: (1) replace gap metric with random selection, (2) replace iterative separation with single-pass top-K selection",
+      "why_important": "This was the main implementation prompt for the ablation study. The choice of which components to ablate was my own decision; the LLM helped with the code implementation."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 3.1. All interactions listed above accurately reflect my actual use of Gemini (Google DeepMind) during the completion of this task. I have independently verified all LLM-generated content and take full responsibility for the submitted work.",
+    "understanding_acknowledged": true,
+    "signature": "Anuj Kumar Singh",
+    "date": "2026-03-12"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "student_metadata": {
+    "name": "Anuj Kumar Singh",
+    "roll_number": "230073",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 2.2",
+      "purpose": "Implementing the u-shapelet algorithm with proper paper annotations",
+      "prompt": "Implement the full u-shapelet algorithm from the paper: sdist function, gap metric, greedy iterative discovery, distance map construction, and final k-Means clustering. Annotate each function with the corresponding equation/section from the paper.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM provided the implementation of sdist, compute_gap, find_best_ushapelet, discover_ushapelets, and build_distance_map functions with annotations referencing specific paper equations and sections.",
+      "code_used_verbatim": true,
+      "student_modification": "I modified the implementation to use randomised candidate search (200 candidates per iteration) instead of exhaustive search for computational tractability. I also added the early-abandon optimization hint in the sdist function and adjusted the MIN_GROUP_SIZE parameter.",
+      "student_verification": "I verified the sdist function by checking that sdist of a subsequence against its source time series returns approximately 0. I verified the gap metric produces expected results on a hand-crafted bimodal distance vector.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 2.2",
+      "purpose": "Writing markdown annotations for each code block linking to paper",
+      "prompt": "For each code block in the implementation, write 2-3 sentence explanations citing the specific equation, section, or algorithm step from the paper",
+      "llm_response_used": "Partially",
+      "how_it_helped": "The LLM drafted annotations for each function which I reviewed and edited. I corrected some equation references and added more specific section citations.",
+      "code_used_verbatim": false,
+      "student_verification": "I verified each citation against the paper PDF to ensure correctness.",
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Implement the full u-shapelet algorithm from the paper: sdist function, gap metric, greedy iterative discovery, distance map construction, and final k-Means clustering.",
+      "why_important": "This was the core implementation prompt. The LLM produced a working implementation that I could then annotate with paper references and test on the toy dataset."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "For each code block in the implementation, write 2-3 sentence explanations citing the specific equation, section, or algorithm step from the paper",
+      "why_important": "Code-to-paper annotations are the primary grading criterion for Task 2.2 (20 marks). This prompt ensured each function was properly linked to the paper's formalism."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 2.2. All interactions listed above accurately reflect my actual use of Gemini (Google DeepMind) during the completion of this task. I have independently verified all LLM-generated content and take full responsibility for the submitted work.",
+    "understanding_acknowledged": true,
+    "signature": "Anuj Kumar Singh",
+    "date": "2026-03-12"
+  }
+}

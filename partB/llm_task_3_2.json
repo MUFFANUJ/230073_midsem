@@ -1,0 +1,49 @@
+{
+  "student_metadata": {
+    "name": "Anuj Kumar Singh",
+    "roll_number": "230073",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 3.2",
+      "purpose": "Implementing the failure mode experiment with a global-frequency dataset",
+      "prompt": "Create a failure mode test for the u-shapelet method using a dataset where classes differ only in global frequency (sine waves at different frequencies)",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM generated the global-frequency dataset and the comparison code. I chose the failure scenario (global frequency differences) based on Assumption 1 from Task 1.2 (local pattern assumption). The 5-7 sentence failure explanation was written by me.",
+      "code_used_verbatim": true,
+      "student_modification": "I chose the specific frequencies (1, 2, 4 Hz) and noise level (0.3) for the failure dataset. The failure explanation connecting it to Assumption 1 and the suggested modification (FFT augmentation) were entirely my own reasoning.",
+      "student_verification": "I verified the dataset correctly generates sine waves at different frequencies and that the u-shapelet method indeed performs worse than Euclidean k-Means on this data.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Create a failure mode test for the u-shapelet method using a dataset where classes differ only in global frequency",
+      "why_important": "The failure mode choice (global frequency vs local patterns) was my own decision based on Assumption 1 from Task 1.2. The LLM helped implement it but the reasoning and interpretation were mine."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 3.2. All interactions listed above accurately reflect my actual use of Gemini (Google DeepMind) during the completion of this task. I have independently verified all LLM-generated content and take full responsibility for the submitted work.",
+    "understanding_acknowledged": true,
+    "signature": "Anuj Kumar Singh",
+    "date": "2026-03-12"
+  }
+}

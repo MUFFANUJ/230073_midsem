@@ -1,0 +1,49 @@
+{
+  "student_metadata": {
+    "name": "Anuj Kumar Singh",
+    "roll_number": "230073",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Gemini (Antigravity Agent)",
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google DeepMind",
+      "task_tag": "Task 2.1",
+      "purpose": "Designing a synthetic dataset appropriate for testing the u-shapelet method",
+      "prompt": "Design a synthetic time series dataset appropriate for testing the u-shapelet method that has at least 100 samples and contains local discriminative patterns",
+      "llm_response_used": "Yes",
+      "how_it_helped": "The LLM suggested using three classes with distinct local motifs (sine bump, triangular spike, rectangular pulse) embedded in noisy random-walk backgrounds. I adopted this design with minor modifications to the noise level and motif length.",
+      "code_used_verbatim": true,
+      "student_modification": "I modified the noise standard deviation from 0.3 to 0.5 and adjusted the motif length from 25 to 20 to better match the shapelet length range hyperparameters.",
+      "student_verification": "I visualised sample time series from each class to confirm the motifs are distinct and the noise level is appropriate.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Design a synthetic time series dataset appropriate for testing the u-shapelet method that has at least 100 samples and contains local discriminative patterns",
+      "why_important": "This prompt was essential for designing a dataset that directly tests the u-shapelet method's core assumption (local discriminative patterns). The three-motif design ensures each class has a unique signature that u-shapelets should be able to discover."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 2.1. All interactions listed above accurately reflect my actual use of Gemini (Google DeepMind) during the completion of this task. I have independently verified all LLM-generated content and take full responsibility for the submitted work.",
+    "understanding_acknowledged": true,
+    "signature": "Anuj Kumar Singh",
+    "date": "2026-03-12"
+  }
+}
